@@ -2,7 +2,7 @@ package Java;
 
 /** Codecademy Learn-Java Project: Fizz Buzz
  * FizzBuzz Program will take Multiples of 3 print Fizz instead of number,
- * 	multiples of 5 print Buzz, and multiples of both print FizzBuzz.
+ * multiples of 5 print Buzz, and multiples of both print FizzBuzz.
  * Purpose: Demonstrate understanding of for loops, if statements, and comparision operators.
  *
  * Auhtor: Cole Cianflone
