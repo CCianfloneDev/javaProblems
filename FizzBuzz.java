@@ -5,26 +5,40 @@ package Java;
  * multiples of 5 print Buzz, and multiples of both print FizzBuzz.
  * Purpose: Demonstrate understanding of for loops, if statements, and comparision operators.
  *
- * Auhtor: Cole Cianflone
+ * @author Cole Cianflone
  * Date: Dec 7th, 2021
  */
 public class FizzBuzz
 {
+  final static int FIZZBUZZ_START = 1;
+  final static int FIZZBUZZ_FINISH = 100;
+  
   public static void main(String[] args)
   {
     // title
     System.out.println("This is the classic FizzBuzz Program\n\n");
 
-    for(int i = 1; i <= 100; i++)
+    for(int i = FIZZBUZZ_START; i <= FIZZBUZZ_FINISH; i++)
     {
-      if(i % 3 == 0 && i % 5 == 0)
+      boolean divisibleByThree = i % 3 == 0;
+      boolean divisibleByFive = i % 5 == 0;
+
+      if(divisibleByThree && divisibleByFive)
+      {
         System.out.println("FizzBuzz!");
-        else if(i % 5 == 0)
-          System.out.println("Buzz!");
-          else if(i % 3 == 0)
-            System.out.println("Fizz!");
-            else
-              System.out.println(i);
+      }
+      else if(divisibleByThree)
+      {
+        System.out.println("Fizz!");
+      }
+      else if(divisibleByFive)
+      {
+        System.out.println("Buzz!");
+      }
+      else
+      {
+        System.out.println(i);
+      }
     }
   }
 }
