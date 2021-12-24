@@ -26,7 +26,7 @@ public class FizzBuzz
         System.out.println("FizzBuzz!");
       }else if(divisibleByThree) {
         System.out.println("Fizz!");
-      }else if(divisibleByFive == 0) {
+      }else if(divisibleByFive) {
         System.out.println("Buzz!");
       }else {
         System.out.println(i);
