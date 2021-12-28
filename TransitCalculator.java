@@ -10,11 +10,11 @@ public class TransitCalculator
 {
 	// fields
 	int numberOfDays,
-		  numberOfRides;
+			numberOfRides;
 
 	String[] fareOptions = {"Pay-per-ride (single ride): ",
-													"7-day Unlimited Rides: ",
-													"30-day Unlimted Rides: "};
+				"7-day Unlimited Rides: ",
+				"30-day Unlimted Rides: "};
 
 	double[] farePrices = {2.75, 33.00, 127.00};
 
