@@ -42,8 +42,8 @@ public class TransitCalculator
 	double[] getRidePrices()
 	{
 		double[] prices = {farePrices[0] * numberOfDays,
-							   unlimited7Price(),
-							   farePrices[2]};
+							         unlimited7Price(),
+							         farePrices[2]};
 		return prices;
 	}
 
