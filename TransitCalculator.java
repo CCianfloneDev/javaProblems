@@ -28,7 +28,7 @@ public class TransitCalculator
 	// methods
   double unlimited7Price()
   {
-		double multipler = Math.ceil((double) numberOfDays / 7);
+	  double multipler = Math.ceil((double) numberOfDays / 7);
     return (double)( farePrices[1] * multipler ) / numberOfRides;
   }
 
