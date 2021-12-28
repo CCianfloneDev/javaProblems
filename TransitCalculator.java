@@ -6,6 +6,7 @@ import java.util.Scanner;
  * @Author: Cole Cianflone
  * Date: Dec 27th, 2021
  */
+
 public class TransitCalculator
 {
 	// fields
