@@ -11,11 +11,11 @@ public class TransitCalculator
 {
 	// fields
 	int numberOfDays,
-		  numberOfRides;
+	    numberOfRides;
 
 	String[] fareOptions = {"Pay-per-ride (single ride): ",
-				"7-day Unlimited Rides: ",
-				"30-day Unlimted Rides: "};
+							"7-day Unlimited Rides: ",
+							"30-day Unlimted Rides: "};
 
 	double[] farePrices = {2.75, 33.00, 127.00};
 
@@ -43,8 +43,8 @@ public class TransitCalculator
 	double[] getRidePrices()
 	{
 		double[] prices = {farePrices[0] * numberOfDays,
-				   unlimited7Price(),
-				   farePrices[2]};
+						   unlimited7Price(),
+						   farePrices[2]};
 		return prices;
 	}
 
@@ -59,7 +59,7 @@ public class TransitCalculator
 				cheapestIndex = i;
 		}
 		return "You should get the " + fareOptions[cheapestIndex] +
-			" option at $" + ridePrices[cheapestIndex] + " per ride.";
+			   " option at $" + ridePrices[cheapestIndex] + " per ride.";
 	}
 
 	// main testing
