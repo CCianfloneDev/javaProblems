@@ -21,7 +21,7 @@ public class TransitCalculator
 	// constructor
 	TransitCalculator(int numberOfDays, int numberOfRides)
 	{
-		this.numberOfDays = numberOfDays;
+		this.numberOfDays  = numberOfDays;
 		this.numberOfRides = numberOfRides;
 	}
 
