@@ -8,22 +8,22 @@ import java.util.Scanner;
  */
 public class TransitCalculator
 {
-	// fields
-	int numberOfDays,
-			numberOfRides;
+    // fields
+  int numberOfDays,
+      numberOfRides;
 
-	String[] fareOptions = {"Pay-per-ride (single ride): ",
-				"7-day Unlimited Rides: ",
-				"30-day Unlimted Rides: "};
+  String[] fareOptions = {"Pay-per-ride (single ride): ",
+                          "7-day Unlimited Rides: ",
+                          "30-day Unlimted Rides: "};
 
-	double[] farePrices = {2.75, 33.00, 127.00};
+  double[] farePrices = {2.75, 33.00, 127.00};
 
-	// constructor
-	TransitCalculator(int numberOfDays, int numberOfRides)
-	{
-		this.numberOfDays = numberOfDays;
-		this.numberOfRides = numberOfRides;
-	}
+  // constructor
+  TransitCalculator(int numberOfDays, int numberOfRides)
+  {
+     this.numberOfDays = numberOfDays;
+     this.numberOfRides = numberOfRides;
+  }
 
   // methods
   double unlimited7Price()
@@ -65,7 +65,7 @@ public class TransitCalculator
 	public static void main(String[] args)
 	{
 		int myRides = 14,
-			myDays = 7;
+			  myDays = 7;
 
 		Scanner sc = new Scanner(System.in);
 
