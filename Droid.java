@@ -25,8 +25,8 @@ public class Droid {
 
     public String energyReport()
     {
-	    return name + "'s battery is currently at: " + batteryLevel;
-	  }
+      return name + "'s battery is currently at: " + batteryLevel;
+    }
 
     public void energyTransfer(int power, Droid transferTo)
     {
