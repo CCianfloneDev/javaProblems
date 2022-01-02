@@ -31,7 +31,7 @@ public class TransitCalculator
 
 	/**
 	 * Calculates and returns prices of 7dayUnlimtedRidePass
-	 * @returns double price per ride with 7dayUnlimtedRidePass
+	 * @return double price per ride with 7dayUnlimtedRidePass
 	 */
 	double unlimited7Price()
 	{
@@ -41,7 +41,7 @@ public class TransitCalculator
 
 	/**
 	 * Calculates and returns prices of 30dayUnlimtedRidePass
-	 * @returns double price per ride with 30dayUnlimtedRidePass
+	 * @return double price per ride with 30dayUnlimtedRidePass
 	 */
 	double unlimited30Price()
 	{
