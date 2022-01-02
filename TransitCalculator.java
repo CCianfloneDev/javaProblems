@@ -19,20 +19,30 @@ public class TransitCalculator
 
 	double[] farePrices = {2.75, 33.00, 127.00};
 
-	// constructor
+	/**
+	 * TransitCalculator constructor
+	 * @param int numberOfDays, int numberOfRides
+	 */
 	TransitCalculator(int numberOfDays, int numberOfRides)
 	{
 		this.numberOfDays = numberOfDays;
 		this.numberOfRides = numberOfRides;
 	}
 
-	// methods
+	/**
+	 * Calculates and returns prices of 7dayUnlimtedRidePass
+	 * @returns double price per ride with 7dayUnlimtedRidePass
+	 */
 	double unlimited7Price()
 	{
 		double multipler = Math.ceil((double) numberOfDays / 7);
 		return (double)( farePrices[1] * multipler ) / numberOfRides;
 	}
 
+	/**
+	 * Calculates and returns prices of 30dayUnlimtedRidePass
+	 * @returns double price per ride with 30dayUnlimtedRidePass
+	 */
 	double unlimited30Price()
 	{
 		double multipler = Math.ceil((double) numberOfDays / 30);
@@ -40,6 +50,10 @@ public class TransitCalculator
 
 	}
 
+	/**
+	 * makes new double[] array and stores the ride prices
+	 * @return double[] array of prices
+	 */
 	double[] getRidePrices()
 	{
 		double[] prices = {farePrices[0] * numberOfDays,
@@ -47,7 +61,11 @@ public class TransitCalculator
 				   farePrices[2]};
 		return prices;
 	}
-
+	
+	/**
+	 * Finds best fare price
+	 * @return String "You should get the " + fareOption + " option at $" + ridePrice + " per ride.";
+	 */
 	String getBestFare()
 	{
 		double[] ridePrices = getRidePrices();
