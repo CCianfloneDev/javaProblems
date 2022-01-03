@@ -13,9 +13,9 @@ public class StringE
 		String userInput;
 		// title
 		System.out.println("=====================\n"+
-				               " eString - CodingBat\n"+
-				               "=====================\n"+
-				               "Will return true if string has between 1-3 'e's\n");
+				   " eString - CodingBat\n"+
+				   "=====================\n"+
+				   "Will return true if string has between 1-3 'e's\n");
 
 		// input
 		Scanner sc = new Scanner(System.in);
